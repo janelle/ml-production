@@ -74,7 +74,7 @@ def add_features(df):
     df['neutered'] = get_neutered(df['sex_upon_outcome'])
 
     # Get hair type.
-    df['hair_type'] = get_hair_type(f['breed'])
+    df['hair_type'] = get_hair_type(df['breed'])
 
     # Age in days upon outcome.
     df['days_upon_outcome'] = compute_days_upon_outcome(df['age_upon_outcome'])
